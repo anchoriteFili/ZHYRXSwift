@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class ViewController: UIViewController {
 
@@ -15,6 +17,12 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func buttonClick(_ sender: UIButton) {
+        
+        self.navigationController?.pushViewController(ZHPeopleViewController(), animated: true)
+        
+        
+    }
+    
 }
 

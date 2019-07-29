@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,10 @@
 		F96DBA7F22EEE3E300449740 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F96DBA7D22EEE3E300449740 /* Main.storyboard */; };
 		F96DBA8122EEE3E400449740 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F96DBA8022EEE3E400449740 /* Assets.xcassets */; };
 		F96DBA8422EEE3E400449740 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F96DBA8222EEE3E400449740 /* LaunchScreen.storyboard */; };
+		F96DBA8E22EEE50300449740 /* ZHPeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96DBA8C22EEE50300449740 /* ZHPeopleViewController.swift */; };
+		F96DBA8F22EEE50300449740 /* ZHPeopleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F96DBA8D22EEE50300449740 /* ZHPeopleViewController.xib */; };
+		F96DBA9122EEE57400449740 /* ZHPeopleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96DBA9022EEE57400449740 /* ZHPeopleModel.swift */; };
+		F96DBA9322EEE5E600449740 /* ZHPeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96DBA9222EEE5E600449740 /* ZHPeopleViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		F96DBA8022EEE3E400449740 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F96DBA8322EEE3E400449740 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F96DBA8522EEE3E400449740 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F96DBA8C22EEE50300449740 /* ZHPeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHPeopleViewController.swift; sourceTree = "<group>"; };
+		F96DBA8D22EEE50300449740 /* ZHPeopleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZHPeopleViewController.xib; sourceTree = "<group>"; };
+		F96DBA9022EEE57400449740 /* ZHPeopleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHPeopleModel.swift; sourceTree = "<group>"; };
+		F96DBA9222EEE5E600449740 /* ZHPeopleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHPeopleViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +54,6 @@
 				0C60F53E27FB09947F00A4DB /* Pods-ZHYRXSwiftDemo.debug.xcconfig */,
 				1482A86F7C6C389057F2898C /* Pods-ZHYRXSwiftDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -79,6 +86,7 @@
 		F96DBA7822EEE3E300449740 /* ZHYRXSwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F96DBA8B22EEE4BC00449740 /* Table */,
 				F96DBA7922EEE3E300449740 /* AppDelegate.swift */,
 				F96DBA7B22EEE3E300449740 /* ViewController.swift */,
 				F96DBA7D22EEE3E300449740 /* Main.storyboard */,
@@ -87,6 +95,17 @@
 				F96DBA8522EEE3E400449740 /* Info.plist */,
 			);
 			path = ZHYRXSwiftDemo;
+			sourceTree = "<group>";
+		};
+		F96DBA8B22EEE4BC00449740 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				F96DBA8C22EEE50300449740 /* ZHPeopleViewController.swift */,
+				F96DBA8D22EEE50300449740 /* ZHPeopleViewController.xib */,
+				F96DBA9022EEE57400449740 /* ZHPeopleModel.swift */,
+				F96DBA9222EEE5E600449740 /* ZHPeopleViewModel.swift */,
+			);
+			path = Table;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F96DBA8422EEE3E400449740 /* LaunchScreen.storyboard in Resources */,
+				F96DBA8F22EEE50300449740 /* ZHPeopleViewController.xib in Resources */,
 				F96DBA8122EEE3E400449740 /* Assets.xcassets in Resources */,
 				F96DBA7F22EEE3E300449740 /* Main.storyboard in Resources */,
 			);
@@ -204,7 +224,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F96DBA9322EEE5E600449740 /* ZHPeopleViewModel.swift in Sources */,
 				F96DBA7C22EEE3E300449740 /* ViewController.swift in Sources */,
+				F96DBA8E22EEE50300449740 /* ZHPeopleViewController.swift in Sources */,
+				F96DBA9122EEE57400449740 /* ZHPeopleModel.swift in Sources */,
 				F96DBA7A22EEE3E300449740 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,6 +378,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7LJJLZ2XH6;
 				INFOPLIST_FILE = ZHYRXSwiftDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -374,6 +398,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7LJJLZ2XH6;
 				INFOPLIST_FILE = ZHYRXSwiftDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
